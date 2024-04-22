@@ -3,6 +3,8 @@ import './style.css'
 import App from './App.vue'
 import PrimeVue from "primevue/config";
 
+
+
 // App Theme
 import 'primevue/resources/themes/aura-dark-green/theme.css';
 import 'primevue/resources/primevue.min.css';
@@ -33,7 +35,7 @@ import InputMask from "primevue/inputmask";
 import Message from "primevue/message";
 import ButtonGroup from "primevue/buttongroup";
 import {createI18n} from "vue-i18n";
-
+import router from "./router.js";
 const i18n =  createI18n({
     locale: 'en',
     massages:{
@@ -60,11 +62,8 @@ createApp(App)
     .component('pv-divider', Divider)
     .component('pv-calendar', Calendar)
     .component('pv-rating', Rating)
-    .component('pv-inputtext', Inputtext)
-    .component('pv-inputnumber', Inputnumber)
-    .component('pv-inputmask', InputMask)
     .component('pv-message', Message)
     .component('pv-buttonGroup', ButtonGroup)
-
+    .use(router)
 
     .mount('#app')

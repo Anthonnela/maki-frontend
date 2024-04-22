@@ -1,9 +1,14 @@
-<script setup>
-</script>
-
 <template>
-<pv-input-text> HOla</pv-input-text>
+  <main>
+
+
+    <router-view></router-view>
+  </main>
 </template>
+
+<script setup>
+
+</script>
 
 <style scoped>
 
