@@ -29,7 +29,7 @@ export default {
     },
 
     goToLogInArtesano() {
-      this.$router.push('/login-artesano');
+      this.$router.push('/login-artisan');
     }
   }
 }

@@ -74,7 +74,7 @@ export default {
 
 .login-image-container {
   width: 50%;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
 .login-image {
@@ -84,8 +84,8 @@ export default {
 }
 
 .login-card {
-  width: 500px;
-  padding: 60px;
+  width: 400px;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   background-color: #f9f9f9;
@@ -97,7 +97,7 @@ export default {
 
 .register-link {
   color: #007bff;
-  margin-top: 60px;
+  margin-top: 10px;
   display: block;
 }
 </style>

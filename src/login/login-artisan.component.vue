@@ -5,7 +5,9 @@
     </div>
     <div class="login-card">
       <div class="p-fluid">
-        <label>Login as Artisan</label>
+        <label>
+          <h1> Login as Artisan</h1>
+          </label>
         <div class="p-field">
           <label for="email">Email</label>
           <pv-input-text id="email" v-model="email"></pv-input-text>
@@ -27,10 +29,10 @@
 
 <script>
 import router from "../router.js";
-import { ArtisanApiService } from "../services/artisan-api.service.js";
+import {ArtisanApiService} from "../services/artisan-api.service.js";
 
 export default {
-  name: "LoginArtisan",
+  name: "Login-Artisan",
   data() {
     return {
       email: "",
