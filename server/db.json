@@ -19,10 +19,19 @@
       "email": "alice@gmail.com",
       "password": "secret456",
       "photo": "https://example.com/image2.jpg"
+    },
+    {
+      "name": "Antonella",
+      "surname": "gonzales",
+      "phone": "98837337",
+      "address": "lima",
+      "email": "Anto@gmail.com",
+      "password": "12345",
+      "photo": "ass",
+      "id": 3
     }
-
   ],
-  "artesano": [
+  "artisan": [
     {
       "id": 1,
       "name": "John",
