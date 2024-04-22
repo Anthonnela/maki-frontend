@@ -21,5 +21,19 @@
       "photo": "https://example.com/image2.jpg"
     }
 
+  ],
+  "artesano": [
+    {
+      "id": 1,
+      "name": "John",
+      "surname": "Doe",
+      "phone": "123456789",
+      "address": "123 Street",
+      "email": "john@gmail.com",
+      "business_name": "Doe's Crafts",
+      "business_address": "456 Avenue",
+      "password": "password123",
+      "photo": "https://example.com/artisan1.jpg"
+    }
   ]
 }
