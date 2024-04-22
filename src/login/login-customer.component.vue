@@ -20,7 +20,7 @@
           <pv-button @click="login()">Login</pv-button>
         </div>
         <div class="p-d-flex p-jc-center">
-          <router-link to="/register" class="register-link">Don't have an account? Register here</router-link>
+          <router-link to="/register-customer" class="register-link">Don't have an account? Register here</router-link>
         </div>
       </div>
     </div>
