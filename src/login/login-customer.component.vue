@@ -1,32 +1,38 @@
-
 <template>
-  <div class="login-card">
-    <div class="p-d-flex p-jc-center">
+  <div class="login-container">
+    <div class="login-image-container">
       <img src="/public/client-sign.jpg" alt="Customer Login Image" class="login-image">
     </div>
-    <div class="p-fluid">
-      <label>Login as Customer</label>
-      <div class="p-field">
-        <label for="email">Email</label>
-        <pv-input-text id="email" v-model="email"></pv-input-text>
-      </div>
-      <div class="p-field">
-        <label for="password">Password</label>
-        <pv-input-text id="password" v-model="password" type="password"></pv-input-text>
-      </div>
-      <div class="p-d-flex p-jc-center">
-        <pv-button @click="login()" class="p-mt-2">Login</pv-button>
+    <div class="login-card">
+      <div class="p-fluid">
+        <label>
+        <h1>Login as Customer </h1>
+            </label>
+        <div class="p-field">
+          <label for="email">Email</label>
+          <pv-input-text id="email" v-model="email"></pv-input-text>
+        </div>
+        <div class="p-field">
+          <label for="password">Password</label>
+          <pv-input-text id="password" v-model="password" type="password"></pv-input-text>
+        </div>
+        <div class="p-d-flex p-jc-center p-mb-3">
+          <pv-button @click="login()">Login</pv-button>
+        </div>
+        <div class="p-d-flex p-jc-center">
+          <router-link to="/register" class="register-link">Don't have an account? Register here</router-link>
+        </div>
       </div>
     </div>
   </div>
 </template>
-<script>
 
+<script>
 import router from "../router.js";
 import {CustomerApiService} from "../services/customer-api.service..js";
 
 export default {
-  name: "Login-Customer",
+  name: "LoginCustomer",
   data() {
     return {
       email: "",
@@ -58,26 +64,40 @@ export default {
 };
 </script>
 
-
-
-
 <style scoped>
-.login-card {
-  max-width: 400px;
-  margin: auto;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  background-color: #f9f9f9;
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-image-container {
+  width: 50%;
+  margin-right: 25px;
 }
 
 .login-image {
   width: 100%;
   height: auto;
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px;
+}
+
+.login-card {
+  width: 500px;
+  padding: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #f9f9f9;
 }
 
 .p-field {
   margin-bottom: 20px;
+}
+
+.register-link {
+  color: #007bff;
+  margin-top: 60px;
+  display: block;
 }
 </style>
