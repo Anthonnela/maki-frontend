@@ -25,7 +25,7 @@ export default {
 
   methods: {
     goToLogInCliente() {
-      this.$router.push('/login-client');
+      this.$router.push('/login-customer');
     },
 
     goToLogInArtesano() {
